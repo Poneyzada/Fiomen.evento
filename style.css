@@ -506,4 +506,33 @@ footer p {
         flex: 1 1 100%;
         max-width: 100%;
     }
+    
+    /* Correções de Espaçamento no Celular (Gaps) */
+    .hero-section {
+        min-height: auto;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    
+    .timer-container {
+        margin-bottom: 1rem;
+    }
+    
+    .copy-section {
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .offer-section {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .super-sale-banner {
+        margin: 2rem 0;
+        padding: 1.5rem 1rem;
+    }
+    
+    footer {
+        padding: 1.5rem 1rem;
+    }
 }
