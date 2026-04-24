@@ -216,7 +216,8 @@ h1, h2, h3 {
     padding: 6rem 2rem;
     text-align: center;
     position: relative;
-    background: var(--bg-dark);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(10, 10, 12, 0.85) 50%, var(--bg-dark) 100%),
+                url('https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=1920&auto=format&fit=crop') center/cover;
 }
 
 .offer-section::before {
