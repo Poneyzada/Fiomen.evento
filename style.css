@@ -279,8 +279,10 @@ h1, h2, h3 {
 .levis { font-family: 'Helvetica', sans-serif; font-size: 1.6rem; font-weight: 900; }
 .forum { font-family: 'Times New Roman', serif; font-size: 1.7rem; letter-spacing: 3px; text-transform: uppercase; }
 .johnjohn { font-family: 'Impact', sans-serif; font-size: 1.6rem; letter-spacing: 1px; text-transform: uppercase; }
-.ellis { font-family: 'Arial Narrow', sans-serif; font-size: 1.6rem; letter-spacing: 4px; font-weight: lighter; text-transform: uppercase;}
+.ellus { font-family: 'Arial Narrow', sans-serif; font-size: 1.6rem; letter-spacing: 4px; font-weight: lighter; text-transform: uppercase;}
 .acostamento { font-family: 'Trebuchet MS', sans-serif; font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;}
+.evoke { font-family: 'Helvetica', sans-serif; font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;}
+.fiomen { font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 900; letter-spacing: 3px; text-transform: uppercase;}
 
 @media (max-width: 768px) {
     .brand-text {
