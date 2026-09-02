@@ -5,8 +5,7 @@
   "description": "Plano Diretor de Marketing Médico & Posicionamento Estratégico para a Gastros Bahia por xCompany",
   "scripts": {
     "dev": "npx serve .",
-    "start": "npx serve .",
-    "build": "echo 'Build successful'"
+    "start": "npx serve ."
   },
   "keywords": [
     "marketing-medico",
