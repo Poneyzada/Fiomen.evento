@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gastros Bahia — Estratégia de Marketing Médico & Posicionamento | xCompany</title>
+  
+  <!-- Meta tags para SEO e compartilhamento social (WhatsApp / LinkedIn) -->
+  <meta name="description" content="Plano Diretor de Marketing Médico e Aquisição de Pacientes para a Clínica Gastros Bahia em Feira de Santana. Desenvolvido por xCompany." />
+  <meta property="og:title" content="Gastros Bahia — Estratégia de Marketing Médico | xCompany" />
+  <meta property="og:description" content="Ecossistema de Confiança & Demanda Previsível: Endoscopia, Gastros Kids, Colonoscopia e NAFAD." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti para CTA de Fechamento -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#050B18',
+              card: '#0B1528',
+              cardHover: '#101E38',
+              border: '#1E2E4A',
+              borderLight: '#2D436B',
+              gold: '#F5CE62',
+              goldDark: '#D4AF37',
+              goldLight: '#FFF3C4',
+              cyan: '#38BDF8',
+              cyanGlow: 'rgba(56, 189, 248, 0.15)',
+              emerald: '#10B981',
+              pink: '#F43F5E',
+              purple: '#A855F7',
+              amber: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          boxShadow: {
+            'glow-gold': '0 0 25px rgba(245, 206, 98, 0.25)',
+            'glow-cyan': '0 0 25px rgba(56, 189, 248, 0.25)',
+            'card-glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #050B18;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E2E4A;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+
+    /* Gradients de Texto */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF6D1 0%, #F5CE62 35%, #D4AF37 70%, #996515 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .cyan-gradient-text {
+      background: linear-gradient(135deg, #BAE6FD 0%, #38BDF8 50%, #0284C7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .emerald-gradient-text {
+      background: linear-gradient(135deg, #A7F3D0 0%, #10B981 50%, #047857 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Animação suave para troca de imagens */
+    .img-fade-transition {
+      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Estilos de Impressão / PDF */
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+      header, .no-print, #chat-interactive-box {
+        display: none !important;
+      }
+      .bg-brand-navy, .bg-brand-card {
+        background-color: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        color: #0f172a !important;
+        box-shadow: none !important;
+      }
+      .text-white, .text-slate-300, .text-slate-200 {
+        color: #0f172a !important;
+      }
+      .gold-gradient-text, .cyan-gradient-text {
+        color: #996515 !important;
+        -webkit-text-fill-color: #996515 !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-brand-navy text-slate-200 font-sans antialiased selection:bg-brand-gold selection:text-brand-navy pb-24">
+
+  <!-- ================= TOPBAR FLUTUANTE DE ALTO PADRÃO ================= -->
+  <header class="sticky top-0 z-50 bg-[#050B18]/90 backdrop-blur-md border-b border-brand-border px-4 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Brand Co-branding -->
+      <div class="flex items-center gap-3 md:gap-4">
+        <!-- xCompany Logo em SVG Dourado Fino -->
+        <div class="flex items-center gap-2">
+          <svg class="w-24 md:w-28 h-8 md:h-10 shrink-0" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="navGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF3C4" />
+                <stop offset="35%" stop-color="#FCD34D" />
+                <stop offset="70%" stop-color="#D4AF37" />
+                <stop offset="100%" stop-color="#85581A" />
+              </linearGradient>
+            </defs>
+            <rect x="25" y="28" width="140" height="26" rx="13" fill="url(#navGold)" />
+            <circle cx="32" cy="72" r="13" fill="url(#navGold)" />
+            <rect x="58" y="59" width="145" height="26" rx="13" fill="url(#navGold)" />
+            <path d="M195 59L236 28H258L217 59H195Z" fill="url(#navGold)" />
+            <rect x="80" y="90" width="130" height="26" rx="13" fill="url(#navGold)" />
+            <path d="M200 90L236 122H210L180 90H200Z" fill="url(#navGold)" />
+            <circle cx="50" cy="135" r="13" fill="url(#navGold)" />
+            <rect x="75" y="122" width="110" height="26" rx="13" fill="url(#navGold)" />
+            <path d="M175 122L215 156H250L205 122H175Z" fill="url(#navGold)" />
+            <text x="80" y="172" fill="url(#navGold)" font-family="system-ui, sans-serif" font-size="22" font-weight="900" letter-spacing="4">COMPANY</text>
+          </svg>
+        </div>
+
+        <div class="h-6 w-px bg-brand-border"></div>
+
+        <!-- Tag do Cliente -->
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-[10px] uppercase font-mono tracking-wider text-brand-gold font-bold">Proposta Estratégica</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          </div>
+          <div class="text-xs md:text-sm font-outfit font-extrabold text-white tracking-tight">
+            GASTROS BAHIA
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Nav Desktop -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
+        <a href="#visao-geral" class="hover:text-brand-gold transition-colors">Visão Geral</a>
+        <a href="#nucleos" class="hover:text-brand-gold transition-colors">Núcleos Clínicos</a>
+        <a href="#funil" class="hover:text-brand-gold transition-colors">Funil em 5 Etapas</a>
+        <a href="#personas" class="hover:text-brand-gold transition-colors">Personas</a>
+        <a href="#anuncios" class="hover:text-brand-gold transition-colors">Anúncios & Whats</a>
+        <a href="#simulador" class="hover:text-brand-gold transition-colors text-brand-cyan font-semibold">Simulador de ROI</a>
+        <a href="#roadmap" class="hover:text-brand-gold transition-colors">Roadmap</a>
+        <a href="#investimento" class="hover:text-brand-gold transition-colors">Investimento</a>
+      </nav>
+
+      <!-- Botões de Ação Topbar -->
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" title="Imprimir / Exportar Proposta em PDF" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-border border border-brand-border text-xs text-slate-300 hover:text-white transition-all">
+          <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+          <span>Salvar PDF</span>
+        </button>
+
+        <a href="#simulador" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-navy font-outfit font-bold text-xs shadow-glow-gold hover:opacity-95 transition-all">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Simulador</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= SUBNAV MOBILE ROLÁVEL ================= -->
+  <div class="lg:hidden sticky top-[57px] z-40 bg-[#070E1E] border-b border-brand-border py-2 px-4 overflow-x-auto whitespace-nowrap scrollbar-none flex gap-2">
+    <a href="#visao-geral" class="px-3 py-1 rounded-full bg-brand-card text-[11px] font-medium text-slate-300 border border-brand-border shrink-0">Visão Geral</a>
+    <a href="#nucleos" class="px-3 py-1 rounded-full bg-brand-card text-[11px] font-medium text-slate-300 border border-brand-border shrink-0">Núcleos Clínicos</a>
+    <a href="#funil" class="px-3 py-1 rounded-full bg-brand-card text-[11px] font-medium text-slate-300 border border-brand-border shrink-0">Funil 5 Etapas</a>
+    <a href="#personas" class="px-3 py-1 rounded-full bg-brand-card text-[11px] font-medium text-slate-300 border border-brand-border shrink-0">Personas</a>
+    <a href="#anuncios" class="px-3 py-1 rounded-full bg-brand-card text-[11px] font-medium text-slate-300 border border-brand-border shrink-0">Anúncios & Whats</a>
+    <a href="#simulador" class="px-3 py-1 rounded-full bg-brand-cyan/10 text-brand-cyan text-[11px] font-bold border border-brand-cyan/30 shrink-0">Simulador de ROI</a>
+    <a href="#roadmap" class="px-3 py-1 rounded-full bg-brand-card text-[11px] font-medium text-slate-300 border border-brand-border shrink-0">Roadmap</a>
+    <a href="#investimento" class="px-3 py-1 rounded-full bg-brand-gold/10 text-brand-gold text-[11px] font-bold border border-brand-gold/30 shrink-0">Investimento</a>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-16">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="visao-geral" class="relative pt-4 pb-8">
+      <!-- Glow Decorativo de Fundo -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-80 bg-gradient-to-b from-brand-gold/10 via-brand-cyan/5 to-transparent blur-3xl -z-10 pointer-events-none"></div>
+
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold font-mono text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>Plano Diretor de Marketing Médico & Posicionamento</span>
+        </div>
+
+        <h1 class="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+          Ecossistema de Confiança & Demanda para a <span class="gold-gradient-text">Gastros Bahia</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+          Estratégia personalizada para aceleração de consultas e exames de alto valor em <strong>Feira de Santana e Região Metropolitana</strong>, combinando tráfego de alta intenção, autoridade médica científica e automação humanizada de agendamento.
+        </p>
+
+        <!-- Selo de Preparado para Edson -->
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400">
+          <span class="flex items-center gap-1.5"><i data-lucide="user-check" class="w-4 h-4 text-brand-gold"></i> Apresentado por <strong>xCompany</strong></span>
+          <span class="text-slate-600">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-brand-cyan"></i> Feira de Santana, Bahia</span>
+          <span class="text-slate-600">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Normas CFM 100% Compatíveis</span>
+        </div>
+      </div>
+
+      <!-- 4 Destaques Estratégicos (KPIs / Pilares) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pt-10">
+        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border hover:border-brand-borderLight transition-all">
+          <div class="w-8 h-8 rounded-lg bg-brand-cyan/10 text-brand-cyan flex items-center justify-center mb-2">
+            <i data-lucide="stethoscope" class="w-4 h-4"></i>
+          </div>
+          <div class="text-xl sm:text-2xl font-outfit font-extrabold text-white">60% Foco</div>
+          <div class="text-xs text-slate-400 mt-0.5">Endoscopia & Colonoscopia de Alta Margem</div>
+        </div>
+
+        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border hover:border-brand-borderLight transition-all">
+          <div class="w-8 h-8 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center mb-2">
+            <i data-lucide="baby" class="w-4 h-4"></i>
+          </div>
+          <div class="text-xl sm:text-2xl font-outfit font-extrabold text-white">Gastros Kids</div>
+          <div class="text-xs text-slate-400 mt-0.5">Nicho Exclusivo em Gastropediatria</div>
+        </div>
+
+        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border hover:border-brand-borderLight transition-all">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+          </div>
+          <div class="text-xl sm:text-2xl font-outfit font-extrabold text-white">&lt; 3 Minutos</div>
+          <div class="text-xs text-slate-400 mt-0.5">Tempo Médio de Atendimento & Triagem</div>
+        </div>
+
+        <div class="bg-brand-card p-4 rounded-2xl border border-brand-border hover:border-brand-borderLight transition-all">
+          <div class="w-8 h-8 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center mb-2">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+          </div>
+          <div class="text-xl sm:text-2xl font-outfit font-extrabold text-brand-gold">3x a 6x ROI</div>
+          <div class="text-xs text-slate-400 mt-0.5">Multiplicador Estimado sobre a Mídia</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SHOWCASE INTERATIVO DOS NÚCLEOS CLÍNICOS ================= -->
+    <section id="nucleos" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>Pilares de Receita Médica</span>
+          </div>
+          <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Showcase dos Núcleos de Atendimento da Gastros Bahia
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Cada núcleo possui sua estratégia de público, canal de mídia e proposta de valor diferenciada:
+          </p>
+        </div>
+
+        <!-- Indicador de Seleção -->
+        <span class="text-xs text-slate-400 hidden sm:block">Clique nas opções abaixo para alternar a visão clínica:</span>
+      </div>
+
+      <!-- Card Principal do Showcase com Foto e Detalhes -->
+      <div class="bg-brand-card border border-brand-border rounded-3xl p-4 sm:p-6 shadow-card-glass">
+        
+        <!-- Área da Imagem em Destaque com Overlay e Badges -->
+        <div class="relative h-64 sm:h-80 md:h-96 w-full rounded-2xl overflow-hidden border border-brand-border bg-slate-950 group">
+          <img 
+            id="showcaseImg" 
+            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=85" 
+            alt="Núcleo Avançado de Endoscopia Gastros Bahia"
+            class="w-full h-full object-cover img-fade-transition scale-100 group-hover:scale-105 duration-700"
+          />
+          
+          <div class="absolute inset-0 bg-gradient-to-t from-[#050B18] via-[#050B18]/60 to-transparent"></div>
+
+          <!-- Badges Superiores -->
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
+            <span id="showcaseBadgeBudget" class="px-3 py-1 rounded-full bg-brand-cyan/20 border border-brand-cyan/40 text-brand-cyan font-mono text-[11px] font-bold uppercase tracking-wider backdrop-blur-md">
+              60% DO BUDGET • ALTA PRIORIDADE
+            </span>
+            <span id="showcaseLocation" class="px-3 py-1 rounded-full bg-slate-900/80 border border-slate-700 text-slate-300 text-[11px] font-medium backdrop-blur-md flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-3 h-3 text-brand-gold"></i>
+              Feira de Santana - BA
+            </span>
+          </div>
+
+          <!-- Textos Inferiores sobre a Imagem -->
+          <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 space-y-2">
+            <h3 id="showcaseTitle" class="font-outfit text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+              Núcleo Avançado de Endoscopia Digestiva
+            </h3>
+            <p id="showcaseDesc" class="text-xs sm:text-sm text-slate-200 max-w-2xl leading-relaxed">
+              Exames precisos com protocolo exclusivo de sedação assistida por médico anestesiologista, eliminando 100% do medo e do desconforto do paciente.
+            </p>
+            
+            <!-- Tags de Diferenciais -->
+            <div id="showcaseTags" class="flex flex-wrap gap-2 pt-1">
+              <span class="text-[10px] sm:text-[11px] px-2.5 py-0.5 rounded-md bg-white/10 text-white backdrop-blur-sm border border-white/15">🩺 Sedação com Anestesiologista</span>
+              <span class="text-[10px] sm:text-[11px] px-2.5 py-0.5 rounded-md bg-white/10 text-white backdrop-blur-sm border border-white/15">⚡ Laudos Imediatos em HD</span>
+              <span class="text-[10px] sm:text-[11px] px-2.5 py-0.5 rounded-md bg-white/10 text-white backdrop-blur-sm border border-white/15">🛡️ Segurança Hospitalar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botões de Troca de Núcleo (5 Opções) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 mt-4">
+          <button onclick="switchNucleo('endoscopia')" id="btn-nuc-endoscopia" class="nucleo-btn active text-left p-3 rounded-xl border border-brand-cyan bg-brand-cyan/10 transition-all">
+            <span class="text-[9px] font-mono font-bold text-brand-cyan uppercase tracking-wider block">Prioridade 01</span>
+            <strong class="font-outfit text-xs sm:text-sm text-white block mt-0.5">Endoscopia</strong>
+          </button>
+
+          <button onclick="switchNucleo('kids')" id="btn-nuc-kids" class="nucleo-btn text-left p-3 rounded-xl border border-brand-border bg-brand-card hover:bg-brand-cardHover transition-all">
+            <span class="text-[9px] font-mono font-bold text-pink-400 uppercase tracking-wider block">Diferencial</span>
+            <strong class="font-outfit text-xs sm:text-sm text-white block mt-0.5">Gastros Kids</strong>
+          </button>
+
+          <button onclick="switchNucleo('colonoscopia')" id="btn-nuc-colonoscopia" class="nucleo-btn text-left p-3 rounded-xl border border-brand-border bg-brand-card hover:bg-brand-cardHover transition-all">
+            <span class="text-[9px] font-mono font-bold text-emerald-400 uppercase tracking-wider block">Rastreio 45+</span>
+            <strong class="font-outfit text-xs sm:text-sm text-white block mt-0.5">Colonoscopia</strong>
+          </button>
+
+          <button onclick="switchNucleo('motilidade')" id="btn-nuc-motilidade" class="nucleo-btn text-left p-3 rounded-xl border border-brand-border bg-brand-card hover:bg-brand-cardHover transition-all">
+            <span class="text-[9px] font-mono font-bold text-purple-400 uppercase tracking-wider block">Superespecialidade</span>
+            <strong class="font-outfit text-xs sm:text-sm text-white block mt-0.5">Neurogastro</strong>
+          </button>
+
+          <button onclick="switchNucleo('nafad')" id="btn-nuc-nafad" class="nucleo-btn text-left p-3 rounded-xl border border-brand-border bg-brand-card hover:bg-brand-cardHover transition-all col-span-2 sm:col-span-1">
+            <span class="text-[9px] font-mono font-bold text-brand-gold uppercase tracking-wider block">Autoridade Médica</span>
+            <strong class="font-outfit text-xs sm:text-sm text-white block mt-0.5">NAFAD Ensino</strong>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 1. JORNADA EM 5 ETAPAS (FUNIL MÉDICO) ================= -->
+    <section id="funil" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+            <i data-lucide="git-merge" class="w-3.5 h-3.5"></i>
+            <span>01. Engenharia de Conversão</span>
+          </div>
+          <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            A Jornada do Paciente em 5 Etapas Estratégicas
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Como a xCompany conduz o paciente desde a primeira dúvida sobre sintomas até a consulta, exame e recomendação:
+          </p>
+        </div>
+      </div>
+
+      <!-- Container do Funil Interativo -->
+      <div class="bg-brand-card border border-brand-border rounded-3xl p-5 sm:p-8 shadow-card-glass space-y-6">
+        
+        <!-- Pills das 5 Etapas -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+          <button onclick="setFunnelStep(1)" id="f-btn-1" class="funnel-pill active py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-navy shadow-glow-gold">
+            1. Descoberta
+          </button>
+          <button onclick="setFunnelStep(2)" id="f-btn-2" class="funnel-pill py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-brand-navy/60 text-slate-300 border border-brand-border hover:border-brand-borderLight">
+            2. Atração Ativa
+          </button>
+          <button onclick="setFunnelStep(3)" id="f-btn-3" class="funnel-pill py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-brand-navy/60 text-slate-300 border border-brand-border hover:border-brand-borderLight">
+            3. Quebra de Objeções
+          </button>
+          <button onclick="setFunnelStep(4)" id="f-btn-4" class="funnel-pill py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-brand-navy/60 text-slate-300 border border-brand-border hover:border-brand-borderLight">
+            4. Conversão WhatsApp
+          </button>
+          <button onclick="setFunnelStep(5)" id="f-btn-5" class="funnel-pill py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-brand-navy/60 text-slate-300 border border-brand-border hover:border-brand-borderLight col-span-2 sm:col-span-1">
+            5. Retenção & Reviews
+          </button>
+        </div>
+
+        <!-- Conteúdo Detalhado da Etapa Selecionada -->
+        <div class="bg-brand-navy/80 border border-brand-border rounded-2xl p-5 sm:p-6 space-y-5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-brand-border pb-4">
+            <div>
+              <span id="funnelBadge" class="text-xs font-mono font-bold uppercase tracking-wider text-brand-cyan">
+                FASE 1 • TOPO DE FUNIL & CONSCIENTIZAÇÃO
+              </span>
+              <h4 id="funnelTitle" class="font-outfit text-lg sm:text-xl font-bold text-white mt-1">
+                O paciente identifica sintomas recorrentes ou busca prevenção
+              </h4>
+            </div>
+            <div id="funnelIconContainer" class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center shrink-0">
+              <i data-lucide="help-circle" class="w-5 h-5"></i>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+            <!-- Cenário do Paciente -->
+            <div class="space-y-2 p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+              <strong class="text-slate-300 flex items-center gap-1.5 text-xs uppercase font-mono tracking-wider">
+                <i data-lucide="user" class="w-3.5 h-3.5 text-slate-400"></i> Momento do Paciente:
+              </strong>
+              <p id="funnelPatientContext" class="text-slate-300 leading-relaxed">
+                Aparecem os primeiros incômodos digestivos (dor de estômago, refluxo constante, queimação pós-refeição) ou o paciente completa 45 anos e toma consciência da necessidade de rastreio de câncer colorretal.
+              </p>
+            </div>
+
+            <!-- Resposta / Ação da xCompany -->
+            <div class="space-y-2 p-4 rounded-xl bg-brand-gold/5 border border-brand-gold/20">
+              <strong class="text-brand-gold flex items-center gap-1.5 text-xs uppercase font-mono tracking-wider">
+                <i data-lucide="zap" class="w-3.5 h-3.5 text-brand-gold"></i> Execução Estratégica xCompany:
+              </strong>
+              <p id="funnelAgencyAction" class="text-slate-200 leading-relaxed">
+                Produção de criativos e vídeos com especialistas da Gastros Bahia desmistificando mitos ("Endoscopia não dói", "Quando procurar gastropediatra?"). Campanhas de Reels, Instagram e Blog posicionando a clínica como autoridade médica número 1 de Feira de Santana.
+              </p>
+            </div>
+          </div>
+
+          <!-- Métricas e Canais -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs border-t border-brand-border/60">
+            <span class="text-slate-400">Canais Principais: <strong id="funnelChannels" class="text-white">Instagram Reels, Meta Ads, Blog Médico, YouTube Shorts</strong></span>
+            <span class="text-slate-400">Objetivo Primário: <strong id="funnelKPI" class="text-brand-cyan">Gerar Atenção Qualificada & Autoridade</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. PERSONAS E SEGMENTAÇÃO ================= -->
+    <section id="personas" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+            <i data-lucide="users" class="w-3.5 h-3.5"></i>
+            <span>02. Segmentação de Alta Precisão</span>
+          </div>
+          <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Personas Estratégicas & Ganchos de Copywriting
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Cada segmento de paciente em Feira de Santana tem um gatilho emocional e uma barreira específica:
+          </p>
+        </div>
+      </div>
+
+      <!-- Grid de 6 Personas Interativas -->
+      <div class="bg-brand-card border border-brand-border rounded-3xl p-5 sm:p-8 shadow-card-glass space-y-6">
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <!-- Persona 0 -->
+          <button onclick="setPersonaCard(0)" id="p-card-0" class="persona-tab active text-center p-3 rounded-2xl border border-brand-gold bg-brand-gold/10 transition-all flex flex-col items-center">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=180&q=80" alt="Investigativo" class="w-14 h-14 rounded-full object-cover border-2 border-brand-gold mb-2" />
+            <span class="font-outfit text-xs font-bold text-white leading-tight">Investigativo<br>Sintomático</span>
+            <span class="text-[9px] font-mono text-brand-cyan mt-1">35-60 anos</span>
+          </button>
+
+          <!-- Persona 1 -->
+          <button onclick="setPersonaCard(1)" id="p-card-1" class="persona-tab text-center p-3 rounded-2xl border border-brand-border bg-brand-navy/60 hover:bg-brand-navy transition-all flex flex-col items-center">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=180&q=80" alt="Preventivo 45+" class="w-14 h-14 rounded-full object-cover border-2 border-slate-700 mb-2" />
+            <span class="font-outfit text-xs font-bold text-white leading-tight">Preventivo<br>45+ Anos</span>
+            <span class="text-[9px] font-mono text-emerald-400 mt-1">Rastreio CCR</span>
+          </button>
+
+          <!-- Persona 2 -->
+          <button onclick="setPersonaCard(2)" id="p-card-2" class="persona-tab text-center p-3 rounded-2xl border border-brand-border bg-brand-navy/60 hover:bg-brand-navy transition-all flex flex-col items-center">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=180&q=80" alt="Gastros Kids" class="w-14 h-14 rounded-full object-cover border-2 border-slate-700 mb-2" />
+            <span class="font-outfit text-xs font-bold text-white leading-tight">Pais / Mães<br>Gastros Kids</span>
+            <span class="text-[9px] font-mono text-pink-400 mt-1">Pediatria</span>
+          </button>
+
+          <!-- Persona 3 -->
+          <button onclick="setPersonaCard(3)" id="p-card-3" class="persona-tab text-center p-3 rounded-2xl border border-brand-border bg-brand-navy/60 hover:bg-brand-navy transition-all flex flex-col items-center">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=180&q=80" alt="Paciente Complexo" class="w-14 h-14 rounded-full object-cover border-2 border-slate-700 mb-2" />
+            <span class="font-outfit text-xs font-bold text-white leading-tight">Paciente<br>Complexo</span>
+            <span class="text-[9px] font-mono text-purple-400 mt-1">Neurogastro</span>
+          </button>
+
+          <!-- Persona 4 -->
+          <button onclick="setPersonaCard(4)" id="p-card-4" class="persona-tab text-center p-3 rounded-2xl border border-brand-border bg-brand-navy/60 hover:bg-brand-navy transition-all flex flex-col items-center">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=180&q=80" alt="Cuidador Integral" class="w-14 h-14 rounded-full object-cover border-2 border-slate-700 mb-2" />
+            <span class="font-outfit text-xs font-bold text-white leading-tight">Cuidador<br>Integral</span>
+            <span class="text-[9px] font-mono text-amber-400 mt-1">Multidisciplinar</span>
+          </button>
+
+          <!-- Persona 5 -->
+          <button onclick="setPersonaCard(5)" id="p-card-5" class="persona-tab text-center p-3 rounded-2xl border border-brand-border bg-brand-navy/60 hover:bg-brand-navy transition-all flex flex-col items-center">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=180&q=80" alt="Médicos NAFAD" class="w-14 h-14 rounded-full object-cover border-2 border-slate-700 mb-2" />
+            <span class="font-outfit text-xs font-bold text-white leading-tight">Médicos &<br>Parceiros</span>
+            <span class="text-[9px] font-mono text-brand-gold mt-1">NAFAD Ensino</span>
+          </button>
+        </div>
+
+        <!-- Painel Detalhado da Persona -->
+        <div class="bg-brand-navy/80 border border-brand-border rounded-2xl p-5 sm:p-6 space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-brand-border pb-3">
+            <div>
+              <span id="personaTargetTag" class="text-xs font-mono font-bold uppercase tracking-wider text-brand-cyan">
+                PRODUTO-CHAVE: ENDOSCOPIA DIGESTIVA ALTA & COLONOSCOPIA
+              </span>
+              <h4 id="personaTitle" class="font-outfit text-lg sm:text-xl font-bold text-white mt-0.5">
+                Investigativo Sintomático (Dor de Estômago, Refluxo, Queimação)
+              </h4>
+            </div>
+            <div id="personaBadgeMeta" class="px-3 py-1 rounded-full bg-brand-card border border-brand-border text-xs text-slate-300 self-start sm:self-auto font-mono">
+              Idade: 35 a 60 anos
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+            <!-- Dores e Objeções -->
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+              <strong class="text-rose-400 flex items-center gap-1.5 uppercase font-mono text-xs">
+                <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i> Dores & Medos Ocultos:
+              </strong>
+              <p id="personaPain" class="text-slate-300 leading-relaxed">
+                Sente queimação diária, refluxo ou sensação de peso. Adia o exame há meses por medo de engasgar, sentir dor na garganta ou ter problemas com a sedação.
+              </p>
+            </div>
+
+            <!-- Canais & Comportamento -->
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+              <strong class="text-brand-cyan flex items-center gap-1.5 uppercase font-mono text-xs">
+                <i data-lucide="search" class="w-3.5 h-3.5"></i> Onde ele busca ajuda:
+              </strong>
+              <p id="personaChannel" class="text-slate-300 leading-relaxed">
+                Google Search ("clínica de endoscopia feira de santana", "endoscopia com anestesia preço"), Google Maps e recomendações no WhatsApp da família.
+              </p>
+            </div>
+
+            <!-- Gancho de Copy da xCompany -->
+            <div class="p-4 rounded-xl bg-brand-gold/10 border border-brand-gold/30 space-y-2">
+              <strong class="text-brand-gold flex items-center gap-1.5 uppercase font-mono text-xs">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Gancho de Copy xCompany:
+              </strong>
+              <p id="personaHook" class="text-slate-100 font-medium italic leading-relaxed">
+                "Endoscopia não precisa ser desconfortável. Na Gastros Bahia, seu exame é realizado com sedação assistida por médico anestesiologista. Você dorme tranquilamente e acorda com o diagnóstico pronto."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. ANÚNCIOS & WHATSAPP INTERATIVO ================= -->
+    <section id="anuncios" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+            <i data-lucide="megaphone" class="w-3.5 h-3.5"></i>
+            <span>03. Estrutura de Campanhas & Atendimento</span>
+          </div>
+          <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Simulador de Criativos & Triagem no WhatsApp
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Veja exatamente como os anúncios aparecem para o paciente e como a conversa é conduzida até o fechamento:
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-brand-card border border-brand-border rounded-3xl p-5 sm:p-8 shadow-card-glass space-y-6">
+        
+        <!-- Toggle de Formato (Google, Instagram, WhatsApp) -->
+        <div class="flex flex-wrap gap-2 border-b border-brand-border pb-4">
+          <button onclick="setAdFormat('google')" id="ad-btn-google" class="ad-toggle active px-4 py-2 rounded-xl text-xs font-outfit font-bold transition-all bg-brand-cyan/20 border border-brand-cyan text-brand-cyan">
+            🔵 Google Ads (Alta Intenção de Busca)
+          </button>
+          <button onclick="setAdFormat('instagram')" id="ad-btn-instagram" class="ad-toggle px-4 py-2 rounded-xl text-xs font-outfit font-bold transition-all bg-brand-navy border border-brand-border text-slate-300 hover:border-slate-600">
+            🟣 Instagram & Meta Ads (Feed / Stories)
+          </button>
+          <button onclick="setAdFormat('whatsapp')" id="ad-btn-whatsapp" class="ad-toggle px-4 py-2 rounded-xl text-xs font-outfit font-bold transition-all bg-brand-navy border border-brand-border text-slate-300 hover:border-slate-600">
+            🟢 Simulador Interativo WhatsApp (SLA &lt; 3min)
+          </button>
+        </div>
+
+        <!-- 1. Google Ads Preview Box -->
+        <div id="preview-google" class="space-y-4">
+          <div class="text-xs font-mono text-slate-400">Preview real do formato de pesquisa no Google Mobile & Desktop:</div>
+          
+          <div class="bg-[#202124] text-white p-5 rounded-2xl border border-slate-700 max-w-2xl space-y-3 font-sans">
+            <div class="flex items-center gap-2">
+              <span class="bg-amber-400 text-black text-[10px] font-extrabold px-1.5 py-0.5 rounded">Patrocinado</span>
+              <span class="text-xs text-slate-400 font-mono">gastrosbahia.com.br/nucleo-endoscopia</span>
+            </div>
+
+            <div>
+              <a href="#anuncios" class="text-sky-400 hover:underline text-lg sm:text-xl font-medium font-sans">
+                Endoscopia e Colonoscopia em Feira de Santana | Núcleo Gastros
+              </a>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+                Sedação assistida por médico anestesiologista para total conforto e segurança. Diagnóstico de gastrite, refluxo e prevenção com laudos ágeis em alta resolução. Agende direto pelo WhatsApp.
+              </p>
+            </div>
+
+            <!-- Sitelinks Google Ads -->
+            <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700/60">
+              <div class="p-2 rounded bg-slate-800/80 border border-slate-700">
+                <span class="text-xs font-medium text-sky-400 block">🩺 Sedação Sem Dor</span>
+                <span class="text-[10px] text-slate-400 block">Médico anestesista presente</span>
+              </div>
+              <div class="p-2 rounded bg-slate-800/80 border border-slate-700">
+                <span class="text-xs font-medium text-sky-400 block">👶 Gastros Kids</span>
+                <span class="text-[10px] text-slate-400 block">Gastropediatria acolhedora</span>
+              </div>
+              <div class="p-2 rounded bg-slate-800/80 border border-slate-700">
+                <span class="text-xs font-medium text-sky-400 block">📅 Rastreio 45+</span>
+                <span class="text-[10px] text-slate-400 block">Colonoscopia preventiva</span>
+              </div>
+              <div class="p-2 rounded bg-slate-800/80 border border-slate-700">
+                <span class="text-xs font-medium text-sky-400 block">💬 Atendimento WhatsApp</span>
+                <span class="text-[10px] text-slate-400 block">Horários desta semana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Instagram Ad Preview Box -->
+        <div id="preview-instagram" class="hidden space-y-4">
+          <div class="text-xs font-mono text-slate-400">Mockup do anúncio em Feed e Stories (Segmentação para Feira de Santana):</div>
+
+          <div class="max-w-md mx-auto bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
+            <!-- Header do Post -->
+            <div class="flex items-center justify-between p-3 border-b border-slate-800">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-gold to-brand-cyan p-0.5">
+                  <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-[10px] font-bold text-white">
+                    GB
+                  </div>
+                </div>
+                <div>
+                  <div class="flex items-center gap-1">
+                    <span class="text-xs font-bold text-white">gastrosbahia</span>
+                    <i data-lucide="check-circle-2" class="w-3 h-3 text-sky-400 fill-sky-400"></i>
+                  </div>
+                  <span class="text-[10px] text-slate-400">Patrocinado • Feira de Santana</span>
+                </div>
+              </div>
+              <i data-lucide="more-horizontal" class="w-4 h-4 text-slate-400"></i>
+            </div>
+
+            <!-- Imagem do Criativo (Gastros Kids ou Endoscopia) -->
+            <div class="relative h-64 sm:h-72 w-full bg-slate-900">
+              <img 
+                src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" 
+                alt="Criativo Gastros Kids" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute bottom-3 left-3 right-3 bg-slate-900/90 backdrop-blur-md p-3 rounded-xl border border-white/10">
+                <span class="text-[10px] font-mono uppercase font-bold text-pink-400">Gastros Kids Feira de Santana</span>
+                <h5 class="text-xs font-bold text-white mt-0.5">Seu filho sente dor de barriga ou refluxo frequente?</h5>
+              </div>
+            </div>
+
+            <!-- Barra de Ação CTA -->
+            <div class="p-3 bg-brand-navy border-b border-slate-800 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-bold text-white block">Agendar Consulta Pediátrica</span>
+                <span class="text-[9px] text-slate-400 block">gastrosbahia.com.br</span>
+              </div>
+              <button class="px-3 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-white font-outfit text-xs font-bold transition-all flex items-center gap-1">
+                <span>Falar no WhatsApp</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- Legenda e Comentários -->
+            <div class="p-3 space-y-1 text-xs">
+              <p class="text-slate-300">
+                <strong class="text-white">gastrosbahia</strong> Criança não é adulto em miniatura. Na Gastros Kids, unimos a alta tecnologia diagnóstica ao acolhimento humanizado e lúdico que seu filho merece. 👶✨
+              </p>
+              <span class="text-[10px] text-slate-500 font-mono">Ver todos os 28 comentários</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. WhatsApp Interactive Simulator -->
+        <div id="preview-whatsapp" class="hidden space-y-4">
+          <div class="text-xs font-mono text-slate-400">Teste o simulador de atendimento imediato e veja as respostas automáticas:</div>
+
+          <div class="max-w-md mx-auto bg-[#07131F] border border-brand-border rounded-3xl overflow-hidden shadow-2xl">
+            <!-- Header WhatsApp -->
+            <div class="bg-[#0B1E32] p-3.5 border-b border-brand-border flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs">
+                  GB
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-white flex items-center gap-1">
+                    <span>Gastros Bahia — Atendimento</span>
+                    <i data-lucide="shield-check" class="w-3 h-3 text-emerald-400"></i>
+                  </div>
+                  <div class="text-[10px] text-emerald-400 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Online agora (Tempo de resposta &lt; 2min)</span>
+                  </div>
+                </div>
+              </div>
+              <button onclick="resetWhatsAppChat()" title="Reiniciar conversa" class="text-slate-400 hover:text-white p-1 rounded">
+                <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Área de Mensagens -->
+            <div id="chatMessagesArea" class="p-4 space-y-3 min-h-[260px] max-h-[340px] overflow-y-auto text-xs bg-[radial-gradient(#102138_1px,transparent_1px)] [background-size:16px_16px]">
+              <div class="p-2.5 rounded-2xl rounded-tl-none bg-[#10233B] text-slate-200 border border-slate-700/60 max-w-[85%] leading-relaxed">
+                Olá! Seja muito bem-vindo(a) à <strong>Gastros Bahia</strong>. 👋<br><br>
+                Sou a assistente de triagem médica. Como podemos cuidar da sua saúde hoje?
+              </div>
+            </div>
+
+            <!-- Botões de Opção Rápida -->
+            <div class="p-3 bg-[#091728] border-t border-brand-border space-y-1.5">
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">Clique em uma opção para simular o paciente:</span>
+              <button onclick="simulateChat('endoscopia')" class="w-full text-left px-3 py-2 rounded-xl bg-brand-navy/80 hover:bg-brand-navy border border-brand-border text-xs text-slate-200 flex items-center justify-between transition-all">
+                <span>🩺 1. Quero agendar Endoscopia com Sedação</span>
+                <i data-lucide="send" class="w-3.5 h-3.5 text-brand-cyan"></i>
+              </button>
+              <button onclick="simulateChat('kids')" class="w-full text-left px-3 py-2 rounded-xl bg-brand-navy/80 hover:bg-brand-navy border border-brand-border text-xs text-slate-200 flex items-center justify-between transition-all">
+                <span>👶 2. Consulta Gastros Kids (Gastropediatria)</span>
+                <i data-lucide="send" class="w-3.5 h-3.5 text-pink-400"></i>
+              </button>
+              <button onclick="simulateChat('colonoscopia')" class="w-full text-left px-3 py-2 rounded-xl bg-brand-navy/80 hover:bg-brand-navy border border-brand-border text-xs text-slate-200 flex items-center justify-between transition-all">
+                <span>📅 3. Prevenção 45+ (Colonoscopia)</span>
+                <i data-lucide="send" class="w-3.5 h-3.5 text-emerald-400"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. MATRIZ DE CONTEÚDO & AUTORIDADE ================= -->
+    <section class="space-y-6">
+      <div>
+        <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+          <span>04. Estrutura Editorial Mensal</span>
+        </div>
+        <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          Matriz de Conteúdo & Autoridade Científica
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Distribuição estratégica das publicações e campanhas para construir reputação inabalável em Feira de Santana:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <!-- Pilar 1 -->
+        <div class="bg-brand-card p-5 rounded-2xl border border-brand-border space-y-3">
+          <div class="flex items-center gap-2 text-brand-cyan">
+            <i data-lucide="shield-alert" class="w-5 h-5"></i>
+            <span class="font-mono text-xs font-bold uppercase tracking-wider">30% Volume</span>
+          </div>
+          <h4 class="font-outfit text-base font-bold text-white">Desmistificando Exames</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Vídeos curtos com os médicos anestesiologistas e gastroenterologistas mostrando a segurança, o conforto e a ausência de dor na endoscopia e colonoscopia.
+          </p>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="bg-brand-card p-5 rounded-2xl border border-brand-border space-y-3">
+          <div class="flex items-center gap-2 text-pink-400">
+            <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+            <span class="font-mono text-xs font-bold uppercase tracking-wider">25% Volume</span>
+          </div>
+          <h4 class="font-outfit text-base font-bold text-white">Gastros Kids & Família</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Acolhimento pediátrico, orientações para pais sobre APLV, intolerância à lactose, refluxo e constipação na infância com linguagem afetiva e lúdica.
+          </p>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="bg-brand-card p-5 rounded-2xl border border-brand-border space-y-3">
+          <div class="flex items-center gap-2 text-emerald-400">
+            <i data-lucide="activity" class="w-5 h-5"></i>
+            <span class="font-mono text-xs font-bold uppercase tracking-wider">25% Volume</span>
+          </div>
+          <h4 class="font-outfit text-base font-bold text-white">Rastreio 45+ & Prevenção</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Campanhas educativas permanentes mostrando como a remoção de pólipos previne o câncer de intestino antes de qualquer sintoma aparecer.
+          </p>
+        </div>
+
+        <!-- Pilar 4 -->
+        <div class="bg-brand-card p-5 rounded-2xl border border-brand-border space-y-3">
+          <div class="flex items-center gap-2 text-brand-gold">
+            <i data-lucide="award" class="w-5 h-5"></i>
+            <span class="font-mono text-xs font-bold uppercase tracking-wider">20% Volume</span>
+          </div>
+          <h4 class="font-outfit text-base font-bold text-white">NAFAD & Ciência</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Artigos, congressos, pós-graduação e aperfeiçoamento contínuo médico, consolidando a Gastros Bahia como polo acadêmico e científico da Bahia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. SIMULADOR FINANCEIRO DE ROI & BUDGET ================= -->
+    <section id="simulador" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+            <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+            <span>05. Planejamento Financeiro Dinâmico</span>
+          </div>
+          <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Simulador de Budget, Volume de Leads & Retorno Estimado
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            Arraste o slider para ajustar a verba mensal de anúncios e simular a divisão do orçamento e a projeção de fechamentos:
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-brand-card border border-brand-border rounded-3xl p-5 sm:p-8 shadow-card-glass space-y-8">
+        
+        <!-- Controle do Slider -->
+        <div class="space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <span class="text-xs sm:text-sm font-outfit font-bold text-slate-300 uppercase tracking-wider">
+              Investimento Mensal em Mídia Paga (Google + Meta):
+            </span>
+            <span id="sliderValueText" class="font-outfit font-black text-2xl sm:text-3xl text-brand-gold drop-shadow-md">
+              R$ 10.000 /mês
+            </span>
+          </div>
+
+          <input 
+            type="range" 
+            id="budgetSlider" 
+            min="3000" 
+            max="30000" 
+            step="1000" 
+            value="10000" 
+            oninput="recalculateBudget(this.value)"
+            class="w-full h-3 bg-brand-navy rounded-lg appearance-none cursor-pointer accent-brand-gold border border-brand-border"
+          />
+
+          <div class="flex justify-between text-[10px] sm:text-xs font-mono text-slate-500">
+            <span>R$ 3.000 (Validação / MVP)</span>
+            <span>R$ 15.000 (Aceleração & Escala)</span>
+            <span>R$ 30.000 (Dominância Regional)</span>
+          </div>
+        </div>
+
+        <!-- 4 Cards de Distribuição Orçamentária -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <!-- Card Exames (60%) -->
+          <div class="bg-brand-navy/80 p-4 rounded-2xl border border-brand-border space-y-1">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-mono font-bold text-brand-cyan uppercase">60% EXAMES</span>
+              <i data-lucide="stethoscope" class="w-3.5 h-3.5 text-brand-cyan"></i>
+            </div>
+            <div id="valExames" class="text-lg sm:text-xl font-outfit font-extrabold text-white">R$ 6.000</div>
+            <div id="leadsExames" class="text-[11px] text-slate-400">~150 a 200 leads/mês</div>
+            <div class="text-[10px] text-brand-cyan/80 pt-1 border-t border-brand-border">Endoscopia & Colonoscopia</div>
+          </div>
+
+          <!-- Card Kids (20%) -->
+          <div class="bg-brand-navy/80 p-4 rounded-2xl border border-brand-border space-y-1">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-mono font-bold text-pink-400 uppercase">20% GASTROS KIDS</span>
+              <i data-lucide="baby" class="w-3.5 h-3.5 text-pink-400"></i>
+            </div>
+            <div id="valKids" class="text-lg sm:text-xl font-outfit font-extrabold text-white">R$ 2.000</div>
+            <div id="leadsKids" class="text-[11px] text-slate-400">~55 a 80 leads/mês</div>
+            <div class="text-[10px] text-pink-400/80 pt-1 border-t border-brand-border">Gastropediatria Especializada</div>
+          </div>
+
+          <!-- Card Especialidades (15%) -->
+          <div class="bg-brand-navy/80 p-4 rounded-2xl border border-brand-border space-y-1">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-mono font-bold text-purple-400 uppercase">15% ESPECIALIDADES</span>
+              <i data-lucide="activity" class="w-3.5 h-3.5 text-purple-400"></i>
+            </div>
+            <div id="valEsp" class="text-lg sm:text-xl font-outfit font-extrabold text-white">R$ 1.500</div>
+            <div id="leadsEsp" class="text-[11px] text-slate-400">~35 a 50 leads/mês</div>
+            <div class="text-[10px] text-purple-400/80 pt-1 border-t border-brand-border">Neurogastro & Multidisciplinar</div>
+          </div>
+
+          <!-- Card NAFAD (5%) -->
+          <div class="bg-brand-navy/80 p-4 rounded-2xl border border-brand-border space-y-1">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-mono font-bold text-brand-gold uppercase">5% NAFAD</span>
+              <i data-lucide="award" class="w-3.5 h-3.5 text-brand-gold"></i>
+            </div>
+            <div id="valNafad" class="text-lg sm:text-xl font-outfit font-extrabold text-white">R$ 500</div>
+            <div class="text-[11px] text-slate-400">Branding Científico</div>
+            <div class="text-[10px] text-brand-gold/80 pt-1 border-t border-brand-border">Autoridade & Prescritores</div>
+          </div>
+        </div>
+
+        <!-- Projeção Consolidada de Retorno -->
+        <div class="bg-gradient-to-br from-[#0B1E38] via-[#081528] to-[#050B18] border-2 border-brand-gold/50 rounded-2xl p-5 sm:p-7 shadow-glow-gold">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            
+            <div class="space-y-1">
+              <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-brand-gold flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Projeção Estimada de Pacientes
+              </span>
+              <h4 class="font-outfit text-xl sm:text-2xl font-black text-white">
+                Consultas & Exames Agendados
+              </h4>
+              <p class="text-xs text-slate-300">
+                Considerando taxa média de conversão da recepção de 30% a 35% com SLA ágil no WhatsApp.
+              </p>
+            </div>
+
+            <div class="text-center p-4 rounded-xl bg-brand-navy/70 border border-brand-border">
+              <span class="text-[10px] font-mono uppercase text-slate-400 block">Volume Mensal de Fechamentos</span>
+              <span id="resTotalAgendamentos" class="font-outfit font-black text-2xl sm:text-3xl lg:text-4xl text-brand-gold block my-1">
+                75 a 120
+              </span>
+              <span class="text-xs text-slate-300">procedimentos e consultas / mês</span>
+            </div>
+
+            <div class="text-center md:text-right p-4 rounded-xl bg-brand-navy/70 border border-brand-border">
+              <span class="text-[10px] font-mono uppercase text-slate-400 block">Faturamento Estimado Gerado</span>
+              <span id="resFaturamentoEstimado" class="font-outfit font-black text-2xl sm:text-3xl text-emerald-400 block my-1">
+                R$ 45.000 a R$ 85.000
+              </span>
+              <span id="resRoiMultiplier" class="text-xs text-brand-cyan font-bold">~4.5x a 8.5x o valor investido</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. ROADMAP DE IMPLEMENTAÇÃO (90 DIAS) ================= -->
+    <section id="roadmap" class="space-y-6">
+      <div>
+        <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          <span>06. Cronograma Executivo</span>
+        </div>
+        <h2 class="font-outfit text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          Roadmap de Implementação em 4 Fases (90 Dias)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+          Processo estruturado de onboarding, validação técnica, tração e escala previsível:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Fase 1 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-5 space-y-3 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-brand-cyan"></div>
+          <span class="text-xs font-mono font-bold text-brand-cyan uppercase tracking-wider">SEMANA 1 • SETUP</span>
+          <h4 class="font-outfit text-base font-bold text-white">Infraestrutura & Tracking</h4>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i> Instalação Pixel Meta & GA4</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i> Google Tag Manager Avançado</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-cyan shrink-0 mt-0.5"></i> Otimização Google Meu Negócio</li>
+          </ul>
+        </div>
+
+        <!-- Fase 2 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-5 space-y-3 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-pink-500"></div>
+          <span class="text-xs font-mono font-bold text-pink-400 uppercase tracking-wider">SEMANA 2 • CRIAÇÃO</span>
+          <h4 class="font-outfit text-base font-bold text-white">Landing Pages & Ativos</h4>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> Copywriting de alta conversão</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> Design de criativos e anúncios</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> Scripts de WhatsApp da Recepção</li>
+          </ul>
+        </div>
+
+        <!-- Fase 3 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-5 space-y-3 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-emerald-400"></div>
+          <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">SEMANA 3-4 • LANÇAMENTO</span>
+          <h4 class="font-outfit text-base font-bold text-white">Tração & Tráfego Ativo</h4>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> Ativação Google Ads Feira de Santana</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> Campanhas Meta Ads (Feed/Stories)</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> Otimização diária de palavras-chave</li>
+          </ul>
+        </div>
+
+        <!-- Fase 4 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-5 space-y-3 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-brand-gold"></div>
+          <span class="text-xs font-mono font-bold text-brand-gold uppercase tracking-wider">MÊS 2 & 3 • ESCALA</span>
+          <h4 class="font-outfit text-base font-bold text-white">Otimização & Dominância</h4>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-gold shrink-0 mt-0.5"></i> Testes A/B de páginas e ofertas</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-gold shrink-0 mt-0.5"></i> Treinamento contínuo do comercial</li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-gold shrink-0 mt-0.5"></i> Relatórios semanais de ROAS & CAC</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. PROPOSTA COMERCIAL & CTA DE FECHAMENTO ================= -->
+    <section id="investimento" class="space-y-6">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <div class="inline-flex items-center gap-1.5 text-xs font-mono text-brand-gold uppercase tracking-wider font-semibold">
+          <i data-lucide="handshake" class="w-3.5 h-3.5"></i>
+          <span>07. Próximos Passos & Parceria</span>
+        </div>
+        <h2 class="font-outfit text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Estrutura da Assessoria Estratégica xCompany
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300">
+          Escopo completo de entrega para transformar a presença digital da Gastros Bahia em uma máquina de aquisição de pacientes:
+        </p>
+      </div>
+
+      <!-- Card Central de Fechamento -->
+      <div class="max-w-4xl mx-auto bg-gradient-to-b from-brand-card to-brand-navy border border-brand-border rounded-3xl p-6 sm:p-10 shadow-card-glass space-y-8">
+        
+        <!-- Grid de Entregáveis -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <div class="space-y-3">
+            <h4 class="font-outfit text-sm font-bold text-brand-gold uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4"></i> Gestão de Tráfego & Mídia
+            </h4>
+            <ul class="text-slate-300 space-y-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Google Search, Display e Performance Max</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Meta Ads (Instagram, Facebook e Stories)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Negativação contínua de termos irrelevantes</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Otimização diária de CPL e Taxa de Conversão</li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-outfit text-sm font-bold text-brand-cyan uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="check-circle" class="w-4 h-4"></i> Ativos & Conversão Comercial
+            </h4>
+            <ul class="text-slate-300 space-y-2">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> Criação de Landing Pages Médicas Ultrarrápidas</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> Copywriting persuasivo em conformidade CFM</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> Treinamento de script de WhatsApp da Recepção</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-cyan"></i> Dashboard em tempo real com métricas da clínica</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Box de Decisão / Botão de Aprovação -->
+        <div class="pt-6 border-t border-brand-border text-center space-y-4">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Proposta Pronta para Validação e Início Imediato</span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <button onclick="approveProposal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-navy font-outfit font-black text-sm sm:text-base shadow-glow-gold hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+              <i data-lucide="check-check" class="w-5 h-5"></i>
+              <span>Aprovar Estratégia & Falar com Edson</span>
+            </button>
+
+            <button onclick="window.print()" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-brand-card hover:bg-brand-border border border-brand-border text-slate-200 font-outfit font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Exportar PDF da Proposta</span>
+            </button>
+          </div>
+
+          <p class="text-xs text-slate-400">
+            Dúvidas ou ajustes no escopo? Entre em contato diretamente com a equipe técnica da <strong>xCompany</strong>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="mt-20 border-t border-brand-border bg-[#030711] py-12 px-4 text-center space-y-4">
+    <div class="max-w-7xl mx-auto space-y-3">
+      <div class="flex justify-center">
+        <svg class="w-28 h-10 shrink-0 opacity-80" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="footGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF3C4" />
+              <stop offset="35%" stop-color="#FCD34D" />
+              <stop offset="70%" stop-color="#D4AF37" />
+              <stop offset="100%" stop-color="#85581A" />
+            </linearGradient>
+          </defs>
+          <rect x="25" y="28" width="140" height="26" rx="13" fill="url(#footGold)" />
+          <circle cx="32" cy="72" r="13" fill="url(#footGold)" />
+          <rect x="58" y="59" width="145" height="26" rx="13" fill="url(#footGold)" />
+          <path d="M195 59L236 28H258L217 59H195Z" fill="url(#footGold)" />
+          <rect x="80" y="90" width="130" height="26" rx="13" fill="url(#footGold)" />
+          <path d="M200 90L236 122H210L180 90H200Z" fill="url(#footGold)" />
+          <circle cx="50" cy="135" r="13" fill="url(#footGold)" />
+          <rect x="75" y="122" width="110" height="26" rx="13" fill="url(#footGold)" />
+          <path d="M175 122L215 156H250L205 122H175Z" fill="url(#footGold)" />
+          <text x="80" y="172" fill="url(#footGold)" font-family="system-ui, sans-serif" font-size="22" font-weight="900" letter-spacing="4">COMPANY</text>
+        </svg>
+      </div>
+
+      <p class="text-xs text-slate-400">
+        Estratégia exclusiva desenvolvida para a <strong>Gastros Bahia</strong> por <strong>xCompany Strategic Lab</strong>.
+      </p>
+
+      <p class="text-[10px] font-mono text-slate-600">
+        © 2026 xCompany. Todos os direitos reservados. Feira de Santana, Bahia.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS DINÂMICOS ================= -->
+  <script>
+    // Inicializa ícones Lucide
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      recalculateBudget(10000);
+    });
+
+    // 1. Dados dos Núcleos Clínicos (Showcase)
+    const nucleosData = {
+      endoscopia: {
+        budget: "60% DO BUDGET • ALTA PRIORIDADE",
+        badgeClass: "bg-brand-cyan/20 border-brand-cyan/40 text-brand-cyan",
+        title: "Núcleo Avançado de Endoscopia Digestiva",
+        desc: "Exames de alta precisão com protocolo exclusivo de sedação assistida por médico anestesiologista, eliminando o desconforto e gerando laudos digitais imediatos em HD.",
+        img: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=85",
+        tags: ["🩺 Sedação com Anestesiologista", "⚡ Laudos Imediatos em HD", "🛡️ Segurança Hospitalar", "🎯 Fundo de Funil Google"]
+      },
+      kids: {
+        budget: "20% DO BUDGET • NICHO EXCLUSIVO",
+        badgeClass: "bg-pink-500/20 border-pink-500/40 text-pink-400",
+        title: "Gastros Kids — Gastropediatria Especializada",
+        desc: "Consultório e equipe estruturados especificamente para o público infantil. Diagnóstico de APLV, intolerâncias alimentares e constipação em ambiente lúdico e sem trauma.",
+        img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1400&q=85",
+        tags: ["🧸 Atendimento Lúdico", "🍼 Especialistas em APLV", "👶 Sem Traumas para a Criança", "🟣 Tráfego Meta Mães 25-45"]
+      },
+      colonoscopia: {
+        budget: "ALTO IMPACTO SOCIAL • PREVENÇÃO 45+",
+        badgeClass: "bg-emerald-500/20 border-emerald-500/40 text-emerald-400",
+        title: "Rastreio Colorretal & Colonoscopia Preventiva",
+        desc: "Campanhas educativas de alto impacto que desmistificam o exame preventivo capaz de salvar vidas ao detectar e retirar pólipos precocemente.",
+        img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1400&q=85",
+        tags: ["🛡️ Prevenção do Câncer de Intestino", "🛌 Preparo Confortável & Seguro", "🔬 Polipectomia na Hora", "🟢 Conscientização 45+"]
+      },
+      motilidade: {
+        budget: "15% DO BUDGET • SUPERTICKET",
+        badgeClass: "bg-purple-500/20 border-purple-500/40 text-purple-400",
+        title: "Motilidade Digestiva & Neurogastroenterologia",
+        desc: "Investigação aprofundada para pacientes com refluxo intratável, disfagia e dores complexas através de Manometria Esofágica de Alta Resolução e pHmetria 24h.",
+        img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=85",
+        tags: ["📊 Manometria de Alta Resolução", "⏱️ pHmetria 24 Horas", "🧠 Foco em Pacientes Crônicos", "📈 Alto Valor Agregado"]
+      },
+      nafad: {
+        budget: "5% DO BUDGET • AUTORIDADE MÁXIMA",
+        badgeClass: "bg-brand-gold/20 border-brand-gold/40 text-brand-gold",
+        title: "NAFAD — Núcleo Acadêmico, Ensino & Pesquisa",
+        desc: "Polo de aperfeiçoamento contínuo e formação médica na Bahia. Fortalece a marca Gastros Bahia como a maior autoridade acadêmica e de encaminhamento médico do estado.",
+        img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=85",
+        tags: ["🎓 Cursos & Pós-graduação", "🤝 Relacionamento com Prescritores", "🔬 Produção Científica", "🏆 Autoridade Incontestável"]
+      }
+    };
+
+    function switchNucleo(key) {
+      const data = nucleosData[key];
+      const img = document.getElementById('showcaseImg');
+      
+      img.style.opacity = '0.2';
+      img.style.transform = 'scale(0.98)';
+
+      setTimeout(() => {
+        img.src = data.img;
+        document.getElementById('showcaseBadgeBudget').innerText = data.budget;
+        document.getElementById('showcaseBadgeBudget').className = `px-3 py-1 rounded-full font-mono text-[11px] font-bold uppercase tracking-wider backdrop-blur-md border ${data.badgeClass}`;
+        document.getElementById('showcaseTitle').innerText = data.title;
+        document.getElementById('showcaseDesc').innerText = data.desc;
+        
+        const tagsContainer = document.getElementById('showcaseTags');
+        tagsContainer.innerHTML = data.tags.map(t => `<span class="text-[10px] sm:text-[11px] px-2.5 py-0.5 rounded-md bg-white/10 text-white backdrop-blur-sm border border-white/15">${t}</span>`).join('');
+
+        img.style.opacity = '1';
+        img.style.transform = 'scale(1)';
+      }, 150);
+
+      // Atualiza botões
+      document.querySelectorAll('.nucleo-btn').forEach(btn => {
+        btn.classList.remove('active', 'border-brand-cyan', 'bg-brand-cyan/10');
+        btn.classList.add('border-brand-border', 'bg-brand-card');
+      });
+
+      const activeBtn = document.getElementById(`btn-nuc-${key}`);
+      if (activeBtn) {
+        activeBtn.classList.add('active', 'border-brand-cyan', 'bg-brand-cyan/10');
+        activeBtn.classList.remove('border-brand-border', 'bg-brand-card');
+      }
+    }
+
+    // 2. Dados do Funil de 5 Etapas
+    const funnelSteps = [
+      {
+        badge: "FASE 1 • TOPO DE FUNIL & CONSCIENTIZAÇÃO",
+        title: "O paciente identifica sintomas recorrentes ou busca prevenção",
+        context: "Aparecem incômodos digestivos crônicos (queimação pós-refeição, dor estomacal, refluxo, distensão) ou o paciente atinge 45 anos e precisa de rastreio preventivo.",
+        action: "Campanhas de conteúdo educativo em Reels e carrosséis com médicos da Gastros Bahia desmistificando medos e posicionando a clínica como referência acolhedora em Feira de Santana.",
+        channels: "Instagram Reels, Meta Ads, Blog Médico, YouTube Shorts",
+        kpi: "Gerar Atenção Qualificada & Autoridade Regional"
+      },
+      {
+        badge: "FASE 2 • ATRAÇÃO ATIVA & INTENÇÃO IMEDIATA",
+        title: "Busca direta por especialistas e exames em Feira de Santana",
+        context: "O paciente já decidiu que precisa de um exame ou consulta e pesquisa ativamente no Google: 'onde fazer endoscopia em Feira', 'clínica do estômago preço' ou 'gastropediatra'.",
+        action: "Campanhas agressivas de Google Search Ads de alta prioridade com extensões de chamada, sitelinks de agendamento e palavra-chave de máxima intenção de compra.",
+        channels: "Google Search Ads, Google Maps (GMB), Redes de Pesquisa Parceiras",
+        kpi: "Captura do Lead no Momento Exato da Decisão"
+      },
+      {
+        badge: "FASE 3 • QUEBRA DE OBJEÇÕES & PROVA DE SEGURANÇA",
+        title: "Avaliação da infraestrutura, conforto e sedação assistida",
+        context: "O paciente tem receio de sentir dor, engasgar ou ter complicações na anestesia. Ele compara clínicas da cidade buscando segurança.",
+        action: "Landing pages dedicadas e vídeos explicativos destacando o protocolo de sedação assistida por médico anestesiologista e a tradição científica do corpo clínico Gastros Bahia.",
+        channels: "Landing Pages de Alta Conversão, Depoimentos de Pacientes, Selo NAFAD",
+        kpi: "Eliminar 100% da Insegurança e Medo do Procedimento"
+      },
+      {
+        badge: "FASE 4 • CONVERSÃO ÁGIL NO WHATSAPP (SLA < 3 MIN)",
+        title: "Contato direto com a recepção para agendamento imediato",
+        context: "O paciente clica no anúncio e chega diretamente no WhatsApp comercial querendo saber horários, preparo e valores particulares/convênios.",
+        action: "Triagem automatizada humanizada com envio instantâneo do Guia de Preparo em PDF e encaminhamento prioritário para fechamento pela equipe de atendimento.",
+        channels: "WhatsApp Business API, Scripts Comerciais Validados, CRM de Atendimento",
+        kpi: "Taxa de Conversão de Lead em Agendamento > 35%"
+      },
+      {
+        badge: "FASE 5 • PÓS-ATENDIMENTO, RETENÇÃO & PROVA SOCIAL",
+        title: "Experiência excelente gera avaliações 5 estrelas e indicações",
+        context: "O paciente realiza o exame sem sentir nada, recebe seu laudo com agilidade e fica extremamente satisfeito com o cuidado recebido.",
+        action: "Automação de mensagem de pós-exame 24h depois com orientações de recuperação e convite para avaliação 5 estrelas no perfil do Google Meu Negócio.",
+        channels: "WhatsApp Follow-up, Google Meu Negócio, Programa de Retorno Anual",
+        kpi: "Reputação 5.0 no Google & Crescimento do Tráfego Orgânico"
+      }
+    ];
+
+    function setFunnelStep(step) {
+      const data = funnelSteps[step - 1];
+      document.getElementById('funnelBadge').innerText = data.badge;
+      document.getElementById('funnelTitle').innerText = data.title;
+      document.getElementById('funnelPatientContext').innerText = data.context;
+      document.getElementById('funnelAgencyAction').innerText = data.action;
+      document.getElementById('funnelChannels').innerText = data.channels;
+      document.getElementById('funnelKPI').innerText = data.kpi;
+
+      for (let i = 1; i <= 5; i++) {
+        const btn = document.getElementById(`f-btn-${i}`);
+        if (i === step) {
+          btn.className = "funnel-pill py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-navy shadow-glow-gold";
+        } else {
+          btn.className = "funnel-pill py-2.5 px-3 rounded-xl font-outfit text-xs font-bold transition-all bg-brand-navy/60 text-slate-300 border border-brand-border hover:border-brand-borderLight";
+        }
+      }
+    }
+
+    // 3. Dados das 6 Personas
+    const personasData = [
+      {
+        tag: "PRODUTO-CHAVE: ENDOSCOPIA DIGESTIVA ALTA & COLONOSCOPIA",
+        title: "Investigativo Sintomático (Dor de Estômago, Refluxo, Queimação)",
+        meta: "Idade: 35 a 60 anos",
+        pain: "Sente queimação diária, azia constante ou refluxo ao deitar. Tem medo de engasgar no exame ou de sentir dor.",
+        channel: "Google Search ('endoscopia feira de santana', 'clínica gastro'), Google Maps e WhatsApp.",
+        hook: '"Endoscopia não precisa ser desconfortável. Na Gastros Bahia, seu exame é realizado com sedação assistida por médico anestesiologista. Você dorme tranquilamente e acorda com o diagnóstico pronto."'
+      },
+      {
+        tag: "PRODUTO-CHAVE: COLONOSCOPIA PREVENTIVA DE RASTREIO",
+        title: "Preventivo 45+ Anos (Prevenção de Câncer Colorretal)",
+        meta: "Idade: 45 a 70 anos",
+        pain: "Assintomático, mas consciente da saúde. Recebeu recomendação do clínico ou completou 45 anos. Tem receio do preparo intestinal.",
+        channel: "Instagram, Facebook, Artigos Informativos e Campanhas de Conscientização.",
+        hook: '"90% dos casos de câncer de intestino podem ser prevenidos quando pólipos são retirados a tempo. Se você completou 45 anos, agende sua colonoscopia preventiva com todo conforto e segurança."'
+      },
+      {
+        tag: "PRODUTO-CHAVE: GASTROS KIDS (GASTROPEDIATRIA)",
+        title: "Pai / Mãe Protetor (Bebês e Crianças com Dores ou Refluxo)",
+        meta: "Público: Mães e Pais de 25 a 45 anos",
+        pain: "Filho com dores abdominais frequentes, suspeita de APLV, intolerância alimentar ou constipação. Tem medo de ambientes hospitalares frios.",
+        channel: "Instagram (Reels de pediatria), Grupos de Mães em Feira de Santana, Google Ads.",
+        hook: '"Criança não é adulto em miniatura. Na Gastros Kids, seu filho é acolhido em consultório lúdico por especialistas que entendem o ritmo e o coração dos pequenos."'
+      },
+      {
+        tag: "PRODUTO-CHAVE: NEUROGASTROENTEROLOGIA & MOTILIDADE",
+        title: "Paciente Crônico / Casos Complexos de Difícil Diagnóstico",
+        meta: "Idade: 28 a 65 anos",
+        pain: "Já consultou diversos médicos, realizou exames comuns sem conclusão e continua com dores ou dificuldade de engolir (disfagia).",
+        channel: "Google Search direcionado ('manometria esofagica feira de santana', 'phmetria 24h'), Encaminhamentos.",
+        hook: '"Quando os exames comuns não explicam seus sintomas: a neurogastroenterologia da Gastros Bahia investiga a fundo com manometria de alta resolução e pHmetria."'
+      },
+      {
+        tag: "PRODUTO-CHAVE: EQUIPE MULTIDISCIPLINAR (NUTRIÇÃO + FISIOTERAPIA)",
+        title: "Cuidador & Saúde Digestiva Integrada",
+        meta: "Idade: 30 a 60 anos",
+        pain: "Quer tratar a causa raiz do problema digestivo através de reeducação alimentar, suporte nutricional e reabilitação do assoalho pélvico.",
+        channel: "Instagram, Programas de Acompanhamento e Pacotes Integrados.",
+        hook: '"Cuidado integral para o seu sistema digestivo: médico gastroenterologista, nutricionista especializada e fisioterapia pélvica integrados em um só lugar."'
+      },
+      {
+        tag: "PRODUTO-CHAVE: NAFAD & AUTORIDADE CIENTÍFICA",
+        title: "Comunidade Médica, Prescritores & Parceiros",
+        meta: "Médicos Clínicos, Pediatras e Cirurgiões da Região",
+        pain: "Precisam de uma clínica de total confiança em Feira de Santana para encaminhar pacientes que necessitam de exames avançados e laudos rápidos.",
+        channel: "LinkedIn, Congressos, Eventos NAFAD e Visitas Institucionais.",
+        hook: '"NAFAD: Ensino, aperfeiçoamento contínuo e precisão diagnóstica que elevam a gastroenterologia na Bahia."'
+      }
+    ];
+
+    function setPersonaCard(idx) {
+      const data = personasData[idx];
+      document.getElementById('personaTargetTag').innerText = data.tag;
+      document.getElementById('personaTitle').innerText = data.title;
+      document.getElementById('personaBadgeMeta').innerText = data.meta;
+      document.getElementById('personaPain').innerText = data.pain;
+      document.getElementById('personaChannel').innerText = data.channel;
+      document.getElementById('personaHook').innerText = data.hook;
+
+      for (let i = 0; i < 6; i++) {
+        const btn = document.getElementById(`p-card-${i}`);
+        const img = btn.querySelector('img');
+        if (i === idx) {
+          btn.className = "persona-tab active text-center p-3 rounded-2xl border border-brand-gold bg-brand-gold/10 transition-all flex flex-col items-center";
+          img.className = "w-14 h-14 rounded-full object-cover border-2 border-brand-gold mb-2";
+        } else {
+          btn.className = "persona-tab text-center p-3 rounded-2xl border border-brand-border bg-brand-navy/60 hover:bg-brand-navy transition-all flex flex-col items-center";
+          img.className = "w-14 h-14 rounded-full object-cover border-2 border-slate-700 mb-2";
+        }
+      }
+    }
+
+    // 4. Alternador de Formatos de Anúncios
+    function setAdFormat(format) {
+      ['google', 'instagram', 'whatsapp'].forEach(f => {
+        const el = document.getElementById(`preview-${f}`);
+        const btn = document.getElementById(`ad-btn-${f}`);
+        if (f === format) {
+          el.classList.remove('hidden');
+          btn.className = "ad-toggle active px-4 py-2 rounded-xl text-xs font-outfit font-bold transition-all bg-brand-cyan/20 border border-brand-cyan text-brand-cyan";
+        } else {
+          el.classList.add('hidden');
+          btn.className = "ad-toggle px-4 py-2 rounded-xl text-xs font-outfit font-bold transition-all bg-brand-navy border border-brand-border text-slate-300 hover:border-slate-600";
+        }
+      });
+      lucide.createIcons();
+    }
+
+    // Simulador de WhatsApp
+    function simulateChat(type) {
+      const chatArea = document.getElementById('chatMessagesArea');
+      let userMsg = "";
+      let botMsg = "";
+
+      if (type === 'endoscopia') {
+        userMsg = "Olá! Gostaria de informações e valores para fazer uma Endoscopia.";
+        botMsg = "Excelente! Na <strong>Gastros Bahia</strong> seu exame é realizado com sedação assistida por médico anestesiologista para seu conforto total. ✨ Temos horários disponíveis para esta semana. Você prefere atendimento <strong>particular</strong> ou pelo seu <strong>convênio</strong>?";
+      } else if (type === 'kids') {
+        userMsg = "Preciso agendar uma consulta com gastropediatra para meu filho.";
+        botMsg = "Que alegria poder cuidar do seu pequeno! 👶 Na <strong>Gastros Kids</strong> temos consultório lúdico e acolhimento especializado. Qual a idade da criança e qual o principal sintoma que ela vem sentindo?";
+      } else {
+        userMsg = "Gostaria de agendar minha Colonoscopia preventiva (45 anos).";
+        botMsg = "Parabéns por cuidar da sua saúde! 👏 O exame preventivo é o melhor caminho. Já vou te enviar o nosso <strong>Guia de Preparo Simplificado em PDF</strong>. Qual o seu nome completo para iniciarmos o pré-agendamento?";
+      }
+
+      // Mensagem do usuário
+      chatArea.innerHTML += `
+        <div class="flex justify-end">
+          <div class="p-2.5 rounded-2xl rounded-tr-none bg-emerald-700 text-white max-w-[85%] leading-relaxed">
+            ${userMsg}
+          </div>
+        </div>
+      `;
+      chatArea.scrollTop = chatArea.scrollHeight;
+
+      // Resposta simulada do bot com delay
+      setTimeout(() => {
+        chatArea.innerHTML += `
+          <div class="flex justify-start">
+            <div class="p-2.5 rounded-2xl rounded-tl-none bg-[#10233B] text-slate-200 border border-slate-700/60 max-w-[85%] leading-relaxed">
+              ${botMsg}
+            </div>
+          </div>
+        `;
+        chatArea.scrollTop = chatArea.scrollHeight;
+      }, 400);
+    }
+
+    function resetWhatsAppChat() {
+      const chatArea = document.getElementById('chatMessagesArea');
+      chatArea.innerHTML = `
+        <div class="p-2.5 rounded-2xl rounded-tl-none bg-[#10233B] text-slate-200 border border-slate-700/60 max-w-[85%] leading-relaxed">
+          Olá! Seja muito bem-vindo(a) à <strong>Gastros Bahia</strong>. 👋<br><br>
+          Sou a assistente de triagem médica. Como podemos cuidar da sua saúde hoje?
+        </div>
+      `;
+    }
+
+    // 5. Calculadora Dinâmica de ROI & Orçamento
+    function recalculateBudget(val) {
+      const b = parseFloat(val);
+      
+      // Atualiza texto principal
+      document.getElementById('sliderValueText').innerText = b.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }) + ' /mês';
+
+      // Distribuição
+      const exames = b * 0.60;
+      const kids = b * 0.20;
+      const esp = b * 0.15;
+      const nafad = b * 0.05;
+
+      document.getElementById('valExames').innerText = exames.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+      document.getElementById('valKids').innerText = kids.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+      document.getElementById('valEsp').innerText = esp.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+      document.getElementById('valNafad').innerText = nafad.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+
+      // Estimativa de Leads
+      const leadsExMin = Math.round(exames / 35);
+      const leadsExMax = Math.round(exames / 26);
+      document.getElementById('leadsExames').innerText = `~${leadsExMin} a ${leadsExMax} leads/mês`;
+
+      const leadsKdMin = Math.round(kids / 30);
+      const leadsKdMax = Math.round(kids / 22);
+      document.getElementById('leadsKids').innerText = `~${leadsKdMin} a ${leadsKdMax} leads/mês`;
+
+      const leadsEspMin = Math.round(esp / 38);
+      const leadsEspMax = Math.round(esp / 28);
+      document.getElementById('leadsEsp').innerText = `~${leadsEspMin} a ${leadsEspMax} leads/mês`;
+
+      // Totais Consolidados
+      const totalLeadsMin = leadsExMin + leadsKdMin + leadsEspMin;
+      const totalLeadsMax = leadsExMax + leadsKdMax + leadsEspMax;
+
+      const agendMin = Math.round(totalLeadsMin * 0.30);
+      const agendMax = Math.round(totalLeadsMax * 0.35);
+      document.getElementById('resTotalAgendamentos').innerText = `${agendMin} a ${agendMax}`;
+
+      // Faturamento Estimado (Ticket médio ponderado R$ 600 - R$ 750 entre exames e consultas)
+      const fatMin = agendMin * 600;
+      const fatMax = agendMax * 750;
+      document.getElementById('resFaturamentoEstimado').innerText = `${fatMin.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 })} a ${fatMax.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 })}`;
+
+      const roiMin = (fatMin / b).toFixed(1);
+      const roiMax = (fatMax / b).toFixed(1);
+      document.getElementById('resRoiMultiplier').innerText = `~${roiMin}x a ${roiMax}x o valor investido em mídia`;
+    }
+
+    // 6. Aprovação da Proposta com Confetti & WhatsApp
+    function approveProposal() {
+      // Dispara efeito de Confetti
+      confetti({
+        particleCount: 120,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#F5CE62', '#38BDF8', '#10B981', '#ffffff']
+      });
+
+      const msg = encodeURIComponent("Olá Edson / xCompany! Analisei a proposta estratégica da Gastros Bahia e gostaria de alinhar os próximos passos para o onboarding!");
+      
+      setTimeout(() => {
+        window.open(`https://api.whatsapp.com/send?text=${msg}`, '_blank');
+      }, 900);
+    }
+  </script>
+
+</body>
+</html>

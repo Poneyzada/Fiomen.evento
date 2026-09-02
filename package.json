@@ -1,0 +1,22 @@
+{
+  "name": "gastros-marketing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plano Diretor de Marketing Médico & Posicionamento Estratégico para a Gastros Bahia por xCompany",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Build successful'"
+  },
+  "keywords": [
+    "marketing-medico",
+    "gastros-bahia",
+    "xcompany",
+    "endoscopia",
+    "gastropediatria",
+    "colonoscopia",
+    "feira-de-santana"
+  ],
+  "author": "xCompany Strategic Lab",
+  "license": "UNLICENSED"
+}
